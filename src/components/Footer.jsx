@@ -2,20 +2,21 @@
 
 import { Box, Container, Typography, Grid, Button, Input } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <Box sx={{ backgroundColor: "rgba(86, 86, 96, 0.1)", py: 5 }}>
       <Container maxWidth="lg">
         <Grid container spacing={3}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} className="md:text-left text-center">
             <Typography
               variant="body1"
-              className="font-bold text-white font-sans text-[36px] leading-[1.5] tracking-[0.00938em]"
+              className="font-bold text-white font-sans text-[36px] leading-[1.5] tracking-[0.00938em] mb-3"
             >
               Tanuki
             </Typography>
-            <Box display="flex">
+            <Box className="flex md:justify-start justify-center">
               {/* Replace placeholders with actual social media links */}
               {[
                 {
@@ -45,6 +46,7 @@ const Footer = () => {
                   target="_blank"
                   key={index}
                   sx={{ textDecoration: "none", mr: 2 }}
+                  className="mb-3"
                 >
                   <img src={link.src} width="40px" alt={link.alt} />
                 </Box>
@@ -52,7 +54,7 @@ const Footer = () => {
             </Box>
             <Typography
               variant="body1"
-              className="text-[#565660] font-bold text-base font-sans mt-1"
+              className="text-[#565660] font-bold text-base font-sans mb-3"
             >
               Copyright © 2024 Tanuki. All rights reserved.
             </Typography>
@@ -63,7 +65,7 @@ const Footer = () => {
               Tanukilaunchpad@gmail.com
             </Typography>
           </Grid>
-          <Grid item xs={6} md={2}>
+          <Grid item xs={6} md={2} className="md:text-left text-center">
             <Box>
               <Typography
                 variant="body1"
@@ -83,12 +85,7 @@ const Footer = () => {
                   target: "_blank",
                 },
               ].map((link) => (
-                <Box
-                  component="a"
-                  href={link.href}
-                  key={link.label}
-                  sx={{ textDecoration: "none", display: "block", my: 1 }}
-                >
+                <Link href={link.href} key={link.label} className="mb-3 block">
                   <Typography
                     variant="body1"
                     className="text-sm font-bold font-sans text-[#b9b8bb]"
@@ -96,11 +93,11 @@ const Footer = () => {
                   >
                     {link.label}
                   </Typography>
-                </Box>
+                </Link>
               ))}
             </Box>
           </Grid>
-          <Grid item xs={6} md={2}>
+          <Grid item xs={6} md={2} className="md:text-left text-center">
             <Box>
               <Typography
                 variant="body1"
@@ -117,23 +114,18 @@ const Footer = () => {
                 { label: "Token Sale Stages", href: "/stages" },
                 { label: "Launchpad", href: "/presale" },
               ].map((link) => (
-                <Box
-                  component="a"
-                  href={link.href}
-                  key={link.label}
-                  sx={{ textDecoration: "none", display: "block", my: 1 }}
-                >
+                <Link href={link.href} key={link.label} className="mb-3 block">
                   <Typography
                     variant="body1"
                     className="text-sm font-bold font-sans text-[#b9b8bb]"
                   >
                     {link.label}
                   </Typography>
-                </Box>
+                </Link>
               ))}
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} className="md:text-left text-center">
             <Typography
               variant="body1"
               className="font-bold text-xl text-white font-sans mb-4"

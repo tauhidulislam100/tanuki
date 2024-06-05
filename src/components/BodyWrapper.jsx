@@ -10,6 +10,10 @@ const BodyWrapper = ({ children, className = "", ...props }) => {
   useEffect(() => {
     if (pathName.includes("presaleDetail")) {
       setBg("presale-bg");
+    } else if (pathName.includes("referral")) {
+      setBg("referral-bg");
+    } else if (pathName.includes("staking")) {
+      setBg("staking-bg");
     } else {
       setBg("home-bg");
     }

@@ -28,10 +28,12 @@ body {
 }
 .presale-bg {
   background-image: url(https://tanukilaunchpad.com/predetailbg.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%;
+}
+.referral-bg {
+  background-image: url(https://tanukilaunchpad.com/presalebg.png);
+}
+.staking-bg {
+  background-image: url(https://tanukilaunchpad.com/Stakebg.png);
 }
 .utility-box {
   display: flex;
@@ -212,4 +214,190 @@ body {
   
   border-radius: 12px;
   background: linear-gradient(90deg, rgb(30, 114, 174) 0%, rgb(26, 229, 34) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.rf-button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 6px 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(119, 30, 174) 0%, rgb(26, 229, 58) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  height: 48px;
+  width: 300px;
+}
+
+.bonus-info {
+  margin-top: 64px;
+  background: linear-gradient(136.07deg, rgb(138, 43, 226) 10.53%, rgb(97, 255, 0) 93.86%);
+  border-radius: 24px;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+
+}
+
+.bonus-info-inner {
+  position: relative;
+  z-index: 1;
+  background: rgb(21, 21, 39);
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.circular-number-box {
+  background: linear-gradient(rgb(28, 108, 255) 0%, rgb(194, 36, 255) 100%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 4px;
+}
+.circular-number-box-inner {
+  background: rgb(21, 21, 39);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.gr-line {
+  background: linear-gradient(rgb(28, 108, 255) 0%, rgb(194, 36, 255) 100%);
+  width: 25px;
+  height: 200px;
+  border-radius: 24px;
+}
+
+.stake-box {
+  margin-top: 16px;
+  background: linear-gradient(284.41deg, rgb(0, 166, 27) -17.98%, rgb(93, 95, 239) 100.19%), linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
+  padding: 16px;
+}
+.stake-box-2 {
+  background: linear-gradient(152.36deg, rgb(73, 111, 193) 17.18%, rgb(1, 253, 40) 102.92%);
+  border-radius: 22px;
+  height: 220px;
+  width: 100%;
+  padding: 3.2px;
+}
+.stake-box-inner {
+  background: rgb(21, 21, 39);
+  height: 100%;
+  width: 100%;
+  border-radius: 22px;
+}
+
+.stake-button {
+  display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    padding: 6px 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(30, 114, 174) 0%, rgb(26, 229, 34) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-transform: capitalize;
+    height: 48px;
+    width: 150px;
+    border: none;
+}
+
+.table-container {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  width: 100%;
+  overflow-x: auto;
+  box-shadow: none;
+  border-radius: 0px;
+  background: none;
+}
+.staking-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  min-width: 1000px;
+}
+.staking-table-head-row {
+  color: inherit;
+  display: table-row;
+  vertical-align: middle;
+  outline: 0px;
+  border-bottom: 2px solid transparent;
+}
+
+.cell {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: left;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.table-heading-text {
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  font-size: 17px;
+  color: rgb(161, 140, 192);
+}
+
+.nft-box-gr {
+  background: linear-gradient(293.23deg, rgb(97, 255, 0) -5.44%, rgb(138, 43, 226) 97.24%), linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
 }
